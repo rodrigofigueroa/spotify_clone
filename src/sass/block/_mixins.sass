@@ -1,0 +1,57 @@
+@mixin helloWorld()
+  li
+    margin: 10px 0px
+    width: 100%
+    border-radius: 5px
+    font-family: Grandstander_Regular
+    &:hover
+      background: $third
+    a
+      font-family: Grandstander_Regular
+      font-size: 16px
+      display: flex
+      align-items: flex-end
+      width: 100%
+      padding: 10px 10px
+      span
+        margin-right: 20px
+        font-size: 28px
+  li.active
+    background: $third
+@mixin paddingExact($up, $down, $right, $left)
+  padding-top: $up
+  padding-bottom: $down
+  padding-right: $right
+  padding-left: $left
+@mixin cardSpotify()
+  padding: 20px 30px
+  cursor: pointer
+  >h2
+    margin-bottom: 20px
+    width: 100%
+  .art_spoty_card
+    max-width: 193px
+    width: 100%
+    height: 267px
+    background: $third
+    border-radius: 10px
+    padding: 20px 
+    margin: 0px 15px 0px 0px
+    figure.circle
+      border-radius: 100%
+    figure
+      width: 100%
+      display: block
+      overflow: hidden
+      height: 150px
+      img
+        width: 100%
+    h2
+      font-size: 14px
+      letter-spacing: .5px
+      text-align: left
+      margin: 15px 0px 5px 0px
+    p
+      color: $four
+      font-size: 10px
+      opacity: 0.8

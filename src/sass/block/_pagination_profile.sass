@@ -1,0 +1,49 @@
+main
+    width: 100%
+    .pagination_profile
+        justify-content: space-between
+        padding: 15px 30px
+        align-items: center
+        .pagination
+            align-items: center
+            a
+                width: 35px
+                height: 35px
+                border-radius: 50%
+                border: 2px solid #fff
+                justify-content: center
+                align-items: center
+                margin: 5px
+                span
+                    font-size: 20px
+            .arrow_disabled
+                opacity: 0.6
+                cursor: not-allowed
+        .profile
+            max-width: 174px
+            width: 100%
+            height: 32px
+            background: $primary
+            border-radius: 20px
+            justify-content: space-around
+            align-items: center
+            cursor: pointer
+            position: relative
+            figure
+                width: 28px
+                height: 28px
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                background: $third
+                svg
+            span.name_profile
+                line-height: normal
+                font-size: 15px
+            span.icon-arrow_drop_down
+                &:before
+                    font-size: 20px
+            &:hover
+                background: $third
+            &.active
+                background: $third

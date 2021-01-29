@@ -1,0 +1,31 @@
+.menu_user
+  width: 100%
+  position: absolute
+  top: 110%
+  background: $third
+  display: none
+  &.active
+    display: block
+  ul
+    padding: 5px
+    li
+      padding: 10px 10px
+      font-size: 13px
+      color: $four
+      opacity: 0.8
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      border-radius: 5px
+      &:hover
+        opacity: 1
+        color: #fff
+        background: #3E3E3E
+    li:last-child
+      border-radius: 0px
+      border-top: 1px solid $four
+      &:hover
+        border-radius: 5px
+        border-top: 1px solid transparent
+    li.active
+      opacity: 1
